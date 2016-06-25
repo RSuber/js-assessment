@@ -52,8 +52,8 @@ describe('functions', function() {
   });
 
   it('you should be able to create a "partial" function', function() {
-    var partial = functionsAnswers.partial(sayIt, 'Hello', 'Ellie');
-    expect(partial('!!!')).to.eql('Hello, Ellie!!!');
+    var back = functionsAnswers.partial(sayIt, 'Hello', 'Ellie');
+    expect(back('!!!')).to.eql('Hello, Ellie!!!');
     expect(sayItCalled).to.be.ok;
   });
 
